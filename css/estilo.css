@@ -1,0 +1,56 @@
+body{
+padding: 0;         /*quando coloca zero não é obrigatório colocar px*/
+margin: 0;       /* esses dois foram usados para tirar o espaço em branco nas laterais do navegador*/
+}
+
+.container{
+    width: 960px;
+    margin: auto;   /*auto deixa a esquerda e direita automatica, calcula sozinho, centralizou*/
+}
+
+header{
+    background-color: #000000;      /*cor do fundo*/
+    color: #ffffff;             /*cor da letra*/
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 250px;
+}
+
+#logo img{
+    width: 100%;
+}
+
+#direita{
+    flex-grow: 1;
+    text-align: center;
+}
+
+#direita p{
+    letter-spacing: 5px;
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: bold;
+}
+
+header nav{
+    display: flex;          /*deixa um do lado do outro*/
+    justify-content: space-between;
+}
+
+header nav a{                           /*links*/
+    color: #ffffff;         /*cor da letra*/
+    text-decoration: none;      /*pra tirar o sublinhado*/
+    text-transform: uppercase;        /*deixa as letras em maisculo*/
+    padding: 5px;
+}
+
+#direita nav a:hover{                   /*:hover --> quando coloca o mouse sobre o elemento*/
+    background-color: #ff0;
+    color: #000;
+}
